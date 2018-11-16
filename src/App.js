@@ -17,9 +17,6 @@ class App extends Component {
         <main className="App-main">
           <Main />
         </main>
-        <footer className="App-footer">
-          개발자 소세지~~~~~~
-       </footer>
       </div>
     );
   }
