@@ -121,7 +121,7 @@ button{
   color:#fff;
   border-radius: 10px;
   margin-left:10px;
-  top: 175px;
+  top: 238px;
 
 }
 
@@ -171,13 +171,17 @@ button{
 }
 
 .memo-wrap{
-    /* flex-direction: column-reverse; */
-    align-content: flex-end;
-    flex-wrap: wrap-reverse;
+    
+    flex-direction: row-reverse;
+    align-content: space-between;
+    flex-wrap: wrap;
     height: calc(100vh - 50px);
     display: flex;
-    justify-content: flex-end;
-    padding: 0 0 20px 20px;
+    /* justify-content: flex-end; */
+    /* padding: 0 0 20px 20px; */
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom:20px;
 }
 .memo-wrap li{
     background-color: #fff;
@@ -189,3 +193,7 @@ button{
     width: 23%;
 }
 
+.title{
+  text-align: center;
+  padding:10px;
+}
