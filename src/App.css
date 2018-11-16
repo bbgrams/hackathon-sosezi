@@ -152,6 +152,24 @@ button{
   width:100%;
 }
 
+
+
+.memo-area{
+  display: flex;
+  margin: 20px auto;
+  width: 80%;
+  justify-content: center;
+}
+
+.memo-area input{
+  padding: 0 12px;
+  border: 0;
+}
+.memo-area button{
+  width: 50px;
+  margin-left: 10px;
+}
+
 .memo-wrap{
     flex-direction: column-reverse;
     align-content: flex-end;
