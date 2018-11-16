@@ -156,7 +156,7 @@ button{
 
 .memo-area{
   display: flex;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   width: 80%;
   justify-content: center;
 }
@@ -166,8 +166,10 @@ button{
   border: 0;
 }
 .memo-area button{
-  width: 50px;
-  margin-left: 10px;
+    width: 90px;
+    margin-left: 10px;
+    background: #FF4669;
+    color: #fff;
 }
 
 .memo-wrap{
