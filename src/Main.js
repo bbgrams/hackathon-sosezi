@@ -33,10 +33,12 @@ export default class Main extends React.Component {
   render() {
     return (
       <div className="memo-container">
-        <input type="text" name="memo"/>
-        <button   onClick={e =>
-        this.handleMemo(e.target.previousElementSibling.value)
-        }>등록</button>
+        <div className ="memo-area">
+          <input type="text" name="memo"/>
+          <button   onClick={e =>
+          this.handleMemo(e.target.previousElementSibling.value)
+          }>등록</button>
+        </div>
         <ul className="memo-wrap">
           {this.state.memos.map(memo => (
             <li key={memo.id}>{memo.body}</li>
