@@ -1,49 +1,71 @@
-import React, { Component } from "react";
+import React from "react";
 import api from "./api";
+
 export default class Baby extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name : "",
-      imgUrl : "",
+  constructor(props){
+    super(props)
+    this.state={
       age : 0,
       birth : "",
       gender : "",
       animal : "",
-      favorite : ""
+      favorite : "",
+      imgUrl: ""
     }
   }
-  render(){
 
+  async data() {
+    // 유저 프로필 사진 이후 색상 이미지로 교체 예정
+    const {data: [info]} = await api.get("/infos",{
+      params: {
+        babyId: this.props.babyId
+      }
+    });
+
+    console.log(info)
+    this.setState({
+      age : info.age,
+      birth : info.birth,
+      gender : info.gender,
+      animal : info.animal,
+      favorite : info.favorite,
+      imgUrl: info.imgUrl
+    });
+  }
+
+  render(){
+    this.data()
+    const {age, birth, gender, animal, favorite, imgUrl} = this.state
     return (
-        <dl className="baby-wrap">
-          <dt>초심</dt>
-          <dd>
-            <ul>
-              <li>
-                <figure>
-                  <img src="https://cdn.glitch.com/e255d7ab-b36c-4d2d-8f00-437b3f8ae69c%2FUNADJUSTEDNONRAW_thumb_516.jpg?1542337530354" />
-                </figure>
+      <dd>
+        <ul>
+          <li>
+            <figure>
+                <img src={imgUrl} />
+              </figure>
                 <figcaption></figcaption>
               </li>
               <li>
-                Age : <span>1</span>
+                Age : {age}
               </li>
               <li>
-                Birth : <span>1</span>
+                Birth : {birth}
               </li>
               <li>
-                Gender : <span>1</span>
+                Gender : {gender}
               </li>
               <li>
-                Animal : <span>1</span>
+                Animal : {animal}
               </li>
               <li>
-                Favorite : <span>1</span>
+                Favorite : {favorite}
               </li>
             </ul>
+
           </dd>
-        </dl>
     )
   }
 }
+
+
+
