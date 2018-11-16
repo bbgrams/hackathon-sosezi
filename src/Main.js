@@ -30,6 +30,15 @@ export default class Main extends React.Component {
     })
   }
 
+  async handleDelete(id){
+    await api.delete("/comments/" + id);
+    const res = await api.get("/comments");
+    const memos = res.data;
+    this.setState({
+      memos
+    });
+  }
+
   render() {
     return (
       <div className="memo-container">
@@ -40,8 +49,10 @@ export default class Main extends React.Component {
           }>등록</button>
         </div>
         <ul className="memo-wrap">
-          {this.state.memos.map(memo => (
-            <li key={memo.id}>{memo.body}</li>
+          {this.state.memos.reverse().map(memo => (
+            <li key={memo.id}>{memo.body}
+            <button onClick={()=> this.handleDelete(memo.id)}>삭제</button>
+            </li>
           ))}
         </ul>
       </div>
