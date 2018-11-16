@@ -193,8 +193,19 @@ button{
     /* overflow: auto; */
     flex-grow: 1;
     width: 23%;
+    position: relative;
 }
-
+.memo-wrap li button{
+    border: 1px solid #FF4669;
+    background: transparent;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #FF4669;
+    height: 30px;
+    margin-top: 5px;
+    bottom: 20px;
+    right: 20px;
+  }
 .title{
   text-align: center;
   padding:10px;
