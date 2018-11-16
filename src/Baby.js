@@ -13,12 +13,6 @@ export default class Baby extends React.Component {
       favorite : ""
     }
   }
-  async componentDidMount() {
-    // 화면이 표시되는 순간에
-    // https://groovy-smile.glitch.me/babys/2?_embed=infos
-    const res = await api.get('/babys/2?_embed=infos');
-    console.log(res.data)
-  }
   render(){
 
     return (

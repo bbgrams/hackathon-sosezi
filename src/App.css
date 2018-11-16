@@ -79,15 +79,22 @@ button{
 2 point : #E61E44
 3 background : #F5F5F5
 */
+.App::after{
+    content: "";
+    display: block;
+    clear:both;
+}
 
 .App-header {
   background-color: #FF4669;
-  min-height: 100vh;
   float:left;
   font-size: calc(10px + 2vmin);
   color: white;
-  width:440px;
-
+  width:320px;
+}
+.App-main{
+  float:left;
+  width:calc(100% - 320px);
 }
 
 .animal-wrap{
@@ -102,4 +109,22 @@ button{
 
 .App-footer{
   width:100%;
+}
+
+.memo-wrap{
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    flex-wrap: wrap-reverse;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: flex-end;
+}
+.memo-wrap li{
+    background-color: #fff;
+    width: 40%;
+    padding: 20px;
+    max-height: 300px;
+    margin: 20px 20px 0 0;
+    overflow: auto;
+    flex-grow: 1;
 }

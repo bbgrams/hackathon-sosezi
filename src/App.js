@@ -15,6 +15,9 @@ class App extends Component {
           <Animal />
         </header>
         <main className="App-main">
+          <p>
+            <button>글쓰기</button>
+          </p>
           <Main />
         </main>
       </div>
