@@ -12,7 +12,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, fieldset, button{
   margin:0; padding:0; border:0; box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif; color:$text-color;
+  font-family: 'Noto Sans KR', sans-serif; 
   text-decoration: none; list-style: none; border-collapse: collapse;
   border-spacing: 0;
 }
@@ -20,7 +20,8 @@ time, mark, audio, video, fieldset, button{
 /* 익스플로러 하위버전은 해당 태그를 인식하지 못한다. 인식하지 못하는 태그는 inline 요소로 들어가기때문에 width, height등의 속성 설정이 안된다. */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, main {
-    display: block;
+
+	display: block;
 }
 body{
   font-size:1.6rem;
@@ -62,9 +63,10 @@ input[type="text"],input[type="password"]{
   padding:0 12px;
   width:100%;
   height: 46px;
-  border:1px solid $border-color;
+  border:1px solid black;
   font-size:1.6rem;
 }
+
 button{
   padding:0 12px;
   height: 46px;
@@ -85,4 +87,19 @@ button{
   font-size: calc(10px + 2vmin);
   color: white;
   width:440px;
+
+}
+
+.animal-wrap{
+  text-align: center;
+}
+.baby-wrap figure {
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.App-footer{
+  width:100%;
 }
