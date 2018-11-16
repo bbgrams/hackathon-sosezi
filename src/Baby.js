@@ -22,7 +22,6 @@ export default class Baby extends React.Component {
       }
     });
 
-    console.log(info)
     this.setState({
       age : info.age,
       birth : info.birth,
