@@ -32,7 +32,9 @@ export default class User extends Component {
 
     return (
       <div className="user-container">
-        <img src={imgUrl} />
+        <p>
+          <img src={imgUrl} />
+        </p>
         {this.state.modified === false ? (
           <p>{this.state.name}</p>
         ) : (
