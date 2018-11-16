@@ -50,13 +50,9 @@ export default class Main extends React.Component {
         </div>
         <ul className="memo-wrap">
           {this.state.memos.reverse().map(memo => (
-<<<<<<< HEAD
             <li key={memo.id}>{memo.body}
             <button onClick={()=> this.handleDelete(memo.id)}>삭제</button>
             </li>
-=======
-            <li key={memo.id}>{memo.body}</li>
->>>>>>> dd6019bd99ba86eb063b32dac94286d81c7ab481
           ))}
         </ul>
       </div>
