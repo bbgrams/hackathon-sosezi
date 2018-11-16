@@ -1,0 +1,81 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "fds"
+      },
+      {
+        "username": "ssz",
+        "hashedPassword": "$2a$10$QVQSJy9NsonK/aR1Bd0Et.2AfMhjQgCh1V9d88dQjOb0fEixrbrCW",
+        "id": 2
+      }
+    ],
+    "colors":[
+        {
+            "id": 1,
+            "colorImgUrl": "https://cdn.glitch.com/e255d7ab-b36c-4d2d-8f00-437b3f8ae69c%2Fbearb_PUSHEAD.jpeg?1542280550102"
+        },
+        {
+            "id": 2,
+            "colorImgUrl": "https://cdn.glitch.com/e255d7ab-b36c-4d2d-8f00-437b3f8ae69c%2Fbearb_YOSAKURA.jpeg?1542339726992"
+        },
+        {
+            "id": 3,
+            "colorImgUrl": "https://cdn.glitch.com/e255d7ab-b36c-4d2d-8f00-437b3f8ae69c%2Fbearb_anemone.jpeg?1542339728042"
+        }
+    ],
+    "babys": [
+      {
+        "id": 1,
+        "userId": 1,
+        "name": "초심",
+        "imgUrl": "https://cdn.glitch.com/e255d7ab-b36c-4d2d-8f00-437b3f8ae69c%2FUNADJUSTEDNONRAW_thumb_516.jpg?1542337530354"
+      },
+      {
+        "id": 2,
+        "userId": 1,
+        "name": "비비",
+        "imgUrl": "https://cdn.glitch.com/e255d7ab-b36c-4d2d-8f00-437b3f8ae69c%2FKakaoTalk_20181102_184522402.jpg?1542284212595"
+      },
+      {
+        "id": 3,
+        "userId": 1,
+        "name": "블리",
+        "imgUrl": "https://cdn.glitch.com/e255d7ab-b36c-4d2d-8f00-437b3f8ae69c%2FKakaoTalk_Photo_2018-11-16-12-04-23.jpeg?1542337491141"
+      }
+    ],
+    "infos": [
+      {
+        "id": 1,
+        "babyId": 2,
+        "age": "2",
+        "birth": "2016/03/06",
+        "gender": "여",
+        "animal": "고양이",
+        "favorite": "삶은 계란 노른자"
+      },
+      {
+        "id": 1,
+        "babyId": 3,
+        "age": "6",
+        "birth": "2012/05/01",
+        "gender": "여",
+        "animal": "고양이",
+        "favorite": "생 닭 안심"
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "userId": 2,
+        "babyId": 1,
+        "body": "도움이 되는 글이네요!"
+      },
+      {
+        "id": 2,
+        "userId": 1,
+        "babyId": 3,
+        "body": "잘 봤습니다!"
+      }
+    ]
+  }
